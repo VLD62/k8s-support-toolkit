@@ -1,0 +1,140 @@
+# ============================================================
+# Operating system files
+# ============================================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# ============================================================
+# Editors and IDEs
+# ============================================================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+
+# ============================================================
+# Temporary and local files
+# ============================================================
+
+*.tmp
+*.temp
+*.bak
+*.cache
+
+tmp/
+temp/
+
+
+# ============================================================
+# Generated output directories
+# ============================================================
+
+**/output/
+**/outputs/
+**/reports/
+**/artifacts/
+**/bundles/
+
+
+# ============================================================
+# Kubernetes baseline inventory output
+# ============================================================
+
+**/01_context_access_inventory_*.txt
+**/02_nodes_inventory_*.txt
+**/03_namespaces_workloads_inventory_*.txt
+**/04_traefik_inventory_*.txt
+**/05_argocd_inventory_*.txt
+**/06_storage_inventory_*.txt
+**/07_ingress_service_inventory_*.txt
+
+**/baseline_inventory_*.tar.gz
+**/baseline_inventory_*.tgz
+
+
+# ============================================================
+# Traefik ingress inventory output
+# ============================================================
+
+**/01_traefik_inventory_*.txt
+**/02_ingress_inventory_*.txt
+**/03_service_exposure_inventory_*.txt
+**/04_route_trace_*.txt
+**/05_troubleshooting_commands_*.md
+
+**/traefik_inventory_*.tar.gz
+**/traefik_inventory_*.tgz
+
+
+# ============================================================
+# Workload troubleshooting output
+# ============================================================
+
+**/00_bundle_context*.txt
+**/00_bundle_execution*.log
+**/00_bundle_status*.md
+
+**/01_namespace_workload_overview_*.txt
+**/02_workload_diagnostics_*.txt
+**/03_pod_diagnostics_*.txt
+**/04_service_dependency_check_*.txt
+
+**/checksums*.sha256
+**/troubleshooting_bundle_*.tar.gz
+**/troubleshooting_bundle_*.tgz
+
+
+# ============================================================
+# Other generated archives
+# ============================================================
+
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+
+
+# ============================================================
+# Kubernetes credentials and sensitive files
+# ============================================================
+
+.kube/
+kubeconfig
+kubeconfig.*
+*.kubeconfig
+
+.env
+.env.*
+!.env.example
+
+secrets/
+private/
+
+*.key
+*.pem
+*.p12
+*.pfx
+
+
+# ============================================================
+# Python, if utilities are added later
+# ============================================================
+
+__pycache__/
+*.py[cod]
+
+.venv/
+venv/
+
+.pytest_cache/
+.mypy_cache/
+
+# Generated Argo CD inventory output
+k8s-argocd-deployment-model/output/
+k8s-storage-pvc-review/outputs/

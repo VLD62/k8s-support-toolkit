@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: <namespace-name>
+  labels:
+    app.kubernetes.io/managed-by: platform-team
+    platform.example.com/environment: <development|test|staging|production>
+    platform.example.com/owner: <team-name>
+    platform.example.com/criticality: <low|medium|high|critical>
+    platform.example.com/data-classification: <public|internal|confidential|restricted>
+  annotations:
+    platform.example.com/technical-owner: "<technical-owner>"
+    platform.example.com/support-contact: "<support-contact>"
+    platform.example.com/onboarding-ticket: "<ticket-reference>"
+    platform.example.com/description: "<namespace-purpose>"
